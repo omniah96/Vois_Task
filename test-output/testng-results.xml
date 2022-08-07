@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-07T11:56:45 AST" name="Default suite" finished-at="2022-08-07T11:59:55 AST" duration-ms="190609">
+    <groups>
+    </groups>
+    <test started-at="2022-08-07T11:56:45 AST" name="Default test" finished-at="2022-08-07T11:59:55 AST" duration-ms="190609">
+      <class name="test.MyAccountTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:56:45 AST" name="setup" finished-at="2022-08-07T11:56:48 AST" duration-ms="3183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignIn()[pri:1, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:56:48 AST" name="testSignIn" finished-at="2022-08-07T11:57:11 AST" duration-ms="23004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignIn -->
+        <test-method signature="testRegisterationPage()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:57:11 AST" name="testRegisterationPage" finished-at="2022-08-07T11:57:14 AST" depends-on-methods="test.MyAccountTest.testSignIn" duration-ms="2531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterationPage -->
+        <test-method signature="testLoginPage()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:57:14 AST" name="testLoginPage" finished-at="2022-08-07T11:57:24 AST" depends-on-methods="test.MyAccountTest.testRegisterationPage" duration-ms="10495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPage -->
+        <test-method signature="authenticatingMyUser()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:57:24 AST" name="authenticatingMyUser" finished-at="2022-08-07T11:57:24 AST" depends-on-methods="test.MyAccountTest.testLoginPage" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticatingMyUser -->
+        <test-method signature="testWomenCategory()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:57:24 AST" name="testWomenCategory" finished-at="2022-08-07T11:57:32 AST" depends-on-methods="test.MyAccountTest.testLoginPage" duration-ms="7765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWomenCategory -->
+        <test-method signature="testBlouseSelection()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:57:32 AST" name="testBlouseSelection" finished-at="2022-08-07T11:58:02 AST" depends-on-methods="test.MyAccountTest.testWomenCategory" duration-ms="30593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlouseSelection -->
+        <test-method signature="testopenProductDetail()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:58:02 AST" name="testopenProductDetail" finished-at="2022-08-07T11:58:14 AST" depends-on-methods="test.MyAccountTest.testBlouseSelection" duration-ms="11545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testopenProductDetail -->
+        <test-method signature="testCartDetails()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:58:14 AST" name="testCartDetails" finished-at="2022-08-07T11:58:43 AST" depends-on-methods="test.MyAccountTest.testopenProductDetail" duration-ms="28865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartDetails -->
+        <test-method signature="testSummaryPage()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:58:43 AST" name="testSummaryPage" finished-at="2022-08-07T11:58:59 AST" depends-on-methods="test.MyAccountTest.testCartDetails" duration-ms="15905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSummaryPage -->
+        <test-method signature="testAdressConfirmationPage()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:58:59 AST" name="testAdressConfirmationPage" finished-at="2022-08-07T11:59:19 AST" depends-on-methods="test.MyAccountTest.testSummaryPage" duration-ms="20588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdressConfirmationPage -->
+        <test-method signature="testShippingProcess()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:59:19 AST" name="testShippingProcess" finished-at="2022-08-07T11:59:36 AST" depends-on-methods="test.MyAccountTest.testAdressConfirmationPage" duration-ms="16135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShippingProcess -->
+        <test-method signature="testPaymentPage()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:59:36 AST" name="testPaymentPage" finished-at="2022-08-07T11:59:43 AST" depends-on-methods="test.MyAccountTest.testShippingProcess" duration-ms="7446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPaymentPage -->
+        <test-method signature="testOrderConfirmation()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:59:43 AST" name="testOrderConfirmation" finished-at="2022-08-07T11:59:49 AST" depends-on-methods="test.MyAccountTest.testPaymentPage" duration-ms="6049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderConfirmation -->
+        <test-method signature="testOrderConfirmationPage()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:59:49 AST" name="testOrderConfirmationPage" finished-at="2022-08-07T11:59:52 AST" depends-on-methods="test.MyAccountTest.testOrderConfirmation" duration-ms="3404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderConfirmationPage -->
+        <test-method signature="testorderHistoryPage()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:59:52 AST" name="testorderHistoryPage" finished-at="2022-08-07T11:59:55 AST" depends-on-methods="test.MyAccountTest.testOrderConfirmationPage" duration-ms="2629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testorderHistoryPage -->
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:test.MyAccountTest@740cae06]" started-at="2022-08-07T11:59:55 AST" name="driverClose" finished-at="2022-08-07T11:59:55 AST" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- test.MyAccountTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
