@@ -56,7 +56,7 @@ public class MyAccountTest extends BaseTest {
 	public void testRegisterationPage() {
 		registerationObject = new RegisterationPage(driver);
 		registerationObject.navigate();
-		registerationObject.registerUser("Omnwd4@gmail.com");
+		registerationObject.registerUser("Omniatask@gmail.com");
 		registerationObject.clickCreateAccountButton();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
